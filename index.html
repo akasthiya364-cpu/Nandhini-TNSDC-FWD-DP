@@ -1,0 +1,322 @@
+<<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <title> Student Profile </title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background-color: #f4f4f4;
+
+    }
+
+    /* Top-left fixed menu */
+
+    .menu {
+
+      position: fixed;
+
+      top: 10px;
+
+      left: 10px;
+
+      background: #333;
+
+      padding: 8px 12px;
+
+      border-radius: 6px;
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+      display: flex;
+
+      gap: 12px;
+
+      z-index: 1000;
+
+    }
+
+    .menu a {
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 14px;
+
+      transition: color 0.3s ease;
+
+    }
+
+    .menu a:hover {
+
+      color: #ff9800;
+
+      cursor: pointer;
+
+    }
+
+    .container {
+
+      min-height: 100vh;
+
+      display: flex; 
+      
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center; bold;
+
+      font-size: 14px;
+
+      transition: color 0.3s ease;
+
+    }
+
+    .menu a:hover {
+
+      color: #ff9800;
+
+      cursor: pointer;
+
+    }
+
+    .container {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+      
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 20px;
+
+      padding-top: 60px; /* make room below menu */
+
+    }
+
+    .fade-in {
+
+      opacity: 0;
+
+      animation: fadeIn 1.2s ease-in forwards;
+
+    }
+    
+    .fade-in-delay {
+
+      animation-delay: 0.6s;
+
+    }
+
+    .fade-in-card {
+
+      animation-delay: 1s;
+
+    }
+    
+     @keyframes fadeIn {
+
+      from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+      }
+
+    }
+
+    .profile-img {
+
+      width: 120px;
+
+      height: 120px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      margin-bottom: 20px;
+      
+    }
+    
+    h2 {
+
+      margin-bottom: 10px;
+
+    }
+
+    .intro {
+
+      max-width: 600px;
+
+      margin-bottom: 40px;
+
+    }
+
+    .projects {
+
+      background-color: #eee;
+
+      padding: 30px 10px;
+
+      width: 100%;
+
+      max-width: 700px;
+
+    }
+
+    .projects h3 {
+
+      margin-bottom: 20px;
+
+    }
+    
+     .project-list {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 20px;
+
+    }
+
+    .card {
+
+      background-color: white;
+
+      padding: 20px;
+
+      width: 200px;
+
+      border-radius: 8px;
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      opacity: 0;
+
+      animation: fadeIn 0.8s ease-in forwards;
+
+    }
+    
+    .contact {
+
+      margin-top: 40px;
+
+    }
+
+    .contact p {
+
+      margin: 5px 0;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="menu">
+
+    <a href="#intro">About</a>
+
+    <a href="#projects">Projects</a>
+    
+  <a href="#contact">Contact</a>
+
+  </nav>
+
+  <div class=" container ">
+  
+     <imag
+  src="https://www.instagram.com/akasthiya418.com" alt="Profilealt="Profilealt="Profile Photo" class="profile-img" >
+
+    <h2 class="fade-in" id="intro">Student Profile</h2>
+
+    <p class="intro fade-in fade-in-card">
+
+      I am a student enthusiastic about technology and design. I love building interactive, user-friendly web applications and exploring new tools in the tech world.
+
+    </p>
+
+    <div class="projects" id="projects">
+
+      <h3 class="fade-in">My Projects</h3>
+
+      <div class="project-list">
+
+        <div class="card" style="animation-delay: 0.2s;">
+
+          <strong>Project 1</strong>
+
+          <p>A simple responsive website.</p>
+
+        </div>
+
+        <div class="card" style="animation-delay: 0.4s;">
+
+          <strong>Project 2</strong>
+          
+          <p>JavaScript-based quiz app.</p>
+
+        </div>
+
+        <div class="card" style="animation-delay: 0.6s;">
+
+          <strong>Project 3</strong>
+
+          <p>Personal blog with CMS.</p>
+
+        </div>
+        
+       </div>
+
+    </div>
+
+    <div class="contact fade-in" id="contact" style="animation-delay: 1.4s;">
+
+      <h3>Contact Me</h3>
+
+      <p>Email: akasthiya364@gmail.com</p>
+
+      <p>Phone: +91 88256 03961 </p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
